@@ -7,6 +7,7 @@ def branches = [:]
 //and jenkins will unite them into a single run of the job
 
 for (int i = 0; i < 4; i++) {
+  print('index :',i)
   def index = i //if we tried to use i below, it would equal 4 in each job execution.
   branches["branch${i}"] = {
 //Parameters:
